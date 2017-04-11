@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "opus_dll", "opus_dll.vcproj", "{0902122D-CD9A-4C86-A694-D0AAA669DDFE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C12DFB00-DA17-46D1-A838-ADBC87EAD3A0} = {C12DFB00-DA17-46D1-A838-ADBC87EAD3A0}
+		{3166B30E-51D8-46C4-86CD-7B8875FD914C} = {3166B30E-51D8-46C4-86CD-7B8875FD914C}
+		{C8E6C521-E84F-4BFD-8F8E-8A1584D60F6B} = {C8E6C521-E84F-4BFD-8F8E-8A1584D60F6B}
+		{22056F54-09CA-4B0D-8D21-91805A15708A} = {22056F54-09CA-4B0D-8D21-91805A15708A}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "celt", "celt\celt.vcproj", "{22056F54-09CA-4B0D-8D21-91805A15708A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "opus", "src\opus.vcproj", "{3166B30E-51D8-46C4-86CD-7B8875FD914C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C12DFB00-DA17-46D1-A838-ADBC87EAD3A0} = {C12DFB00-DA17-46D1-A838-ADBC87EAD3A0}
+		{C8E6C521-E84F-4BFD-8F8E-8A1584D60F6B} = {C8E6C521-E84F-4BFD-8F8E-8A1584D60F6B}
+		{22056F54-09CA-4B0D-8D21-91805A15708A} = {22056F54-09CA-4B0D-8D21-91805A15708A}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "silk_common", "silk\silk_common.vcproj", "{C8E6C521-E84F-4BFD-8F8E-8A1584D60F6B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{22056F54-09CA-4B0D-8D21-91805A15708A} = {22056F54-09CA-4B0D-8D21-91805A15708A}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "silk_float", "silk\float\silk_float.vcproj", "{C12DFB00-DA17-46D1-A838-ADBC87EAD3A0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C8E6C521-E84F-4BFD-8F8E-8A1584D60F6B} = {C8E6C521-E84F-4BFD-8F8E-8A1584D60F6B}
+		{22056F54-09CA-4B0D-8D21-91805A15708A} = {22056F54-09CA-4B0D-8D21-91805A15708A}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "opus_testapp", "opus_testapp\opus_testapp.vcproj", "{1FCCC443-CE7F-4581-A042-B53029F78024}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0902122D-CD9A-4C86-A694-D0AAA669DDFE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0902122D-CD9A-4C86-A694-D0AAA669DDFE}.Debug|Win32.Build.0 = Debug|Win32
+		{0902122D-CD9A-4C86-A694-D0AAA669DDFE}.Release|Win32.ActiveCfg = Release|Win32
+		{0902122D-CD9A-4C86-A694-D0AAA669DDFE}.Release|Win32.Build.0 = Release|Win32
+		{22056F54-09CA-4B0D-8D21-91805A15708A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{22056F54-09CA-4B0D-8D21-91805A15708A}.Debug|Win32.Build.0 = Debug|Win32
+		{22056F54-09CA-4B0D-8D21-91805A15708A}.Release|Win32.ActiveCfg = Release|Win32
+		{22056F54-09CA-4B0D-8D21-91805A15708A}.Release|Win32.Build.0 = Release|Win32
+		{3166B30E-51D8-46C4-86CD-7B8875FD914C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3166B30E-51D8-46C4-86CD-7B8875FD914C}.Debug|Win32.Build.0 = Debug|Win32
+		{3166B30E-51D8-46C4-86CD-7B8875FD914C}.Release|Win32.ActiveCfg = Release|Win32
+		{3166B30E-51D8-46C4-86CD-7B8875FD914C}.Release|Win32.Build.0 = Release|Win32
+		{C8E6C521-E84F-4BFD-8F8E-8A1584D60F6B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C8E6C521-E84F-4BFD-8F8E-8A1584D60F6B}.Debug|Win32.Build.0 = Debug|Win32
+		{C8E6C521-E84F-4BFD-8F8E-8A1584D60F6B}.Release|Win32.ActiveCfg = Release|Win32
+		{C8E6C521-E84F-4BFD-8F8E-8A1584D60F6B}.Release|Win32.Build.0 = Release|Win32
+		{C12DFB00-DA17-46D1-A838-ADBC87EAD3A0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C12DFB00-DA17-46D1-A838-ADBC87EAD3A0}.Debug|Win32.Build.0 = Debug|Win32
+		{C12DFB00-DA17-46D1-A838-ADBC87EAD3A0}.Release|Win32.ActiveCfg = Release|Win32
+		{C12DFB00-DA17-46D1-A838-ADBC87EAD3A0}.Release|Win32.Build.0 = Release|Win32
+		{1FCCC443-CE7F-4581-A042-B53029F78024}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1FCCC443-CE7F-4581-A042-B53029F78024}.Debug|Win32.Build.0 = Debug|Win32
+		{1FCCC443-CE7F-4581-A042-B53029F78024}.Release|Win32.ActiveCfg = Release|Win32
+		{1FCCC443-CE7F-4581-A042-B53029F78024}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
